@@ -149,6 +149,9 @@ body{
         font-size: 26px;
         margin-bottom: 0;
         letter-spacing: 5px;
+        @media(max-width:$xs){
+            white-space:nowrap;
+        }
     }
 
     .sub-title{
