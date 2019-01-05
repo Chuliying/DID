@@ -164,6 +164,7 @@ body{
         margin-right: auto;
         @media(max-width:$xs){
             display: inline-block;
+            white-space:nowrap;
         }
     }
     
