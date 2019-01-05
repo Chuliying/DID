@@ -3,7 +3,11 @@
 body{
     font-family: serif!important;
     h1,h2,h3,h4,h5,p,span,li{
-        //font-family: 'Noto Serif TC', serif;    
+        
+        @media(max-width:$xs){
+            font-family: 'Noto Serif TC', serif;      
+        }
+        //
     }
 }
 
@@ -172,8 +176,8 @@ body{
 
 .light{
     opacity: 0.75;
-    @media(max-width:$xs){
-        //display: block!important;
+    @media(max-width:$xs){ 
+        display: block!important;
         top: 50%;
         left: 50%;
         opacity: 0.35;
@@ -313,8 +317,13 @@ body{
     .col-md-4{
         >div{
             padding: 0 45px;
+            
             >div{
                 position: relative;
+                @media(max-width:$xs){
+                    max-width: 150px;
+                    margin: auto;
+                }
             }
         }
         
@@ -330,6 +339,7 @@ body{
         
         &:nth-child(2){
             >div{
+                
                 >div{
                     &:before,&:after{
                         content: '';
@@ -344,8 +354,10 @@ body{
                         background-size: cover;
                         
                         @media(max-width:$xs){
+                            height: 20px;
+                            width: 20px;
                             left: 50%;
-                            margin-left: -17.5px;
+                            margin-left: -10px;
                             top: 0;
                         }
                     }
@@ -357,7 +369,7 @@ body{
                         
                         @media(max-width:$xs){
                             left: 50%;
-                            margin-left: -17.5px;
+                            margin-left: -10px;
                             bottom: 0;
                             margin-top: 0;
                             margin-bottom: -105px;
