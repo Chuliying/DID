@@ -163,7 +163,7 @@ body{
         margin-left: auto;
         margin-right: auto;
         @media(max-width:$xs){
-            letter-spacing: 1.5px;
+            display: inline-block;
         }
     }
     
@@ -253,6 +253,10 @@ body{
     margin: auto;
     position: relative;
     margin-bottom: 60px;
+    font-family: serif;
+    @media(max-width:$xs){
+        font-family: 'Noto Serif TC', serif!important;      
+    }
     
     &:before{
         content: "(";
