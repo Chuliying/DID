@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif+TC');
 
 body{
+    font-family: serif!important;
     h1,h2,h3,h4,h5,p,span,li{
         //font-family: 'Noto Serif TC', serif;    
     }
@@ -32,6 +33,29 @@ body{
     left: 50%;
     margin-left: -280px;
     top: 30px;
+    img{
+        &:first-child{
+            @media(max-width:$xs){
+                display: none;
+            }
+        }
+
+        &:last-child{
+            display: none;
+            @media(max-width:$xs){
+                display: block;
+            }
+        }
+    }
+   
+    
+    @media(max-width:$xs){
+        opacity: 1;
+        margin-left: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+    }
 }
 
 .section-index .logo-container .main-slogan .shadow{
@@ -39,13 +63,18 @@ body{
     //margin-top: -100px;
     left: auto;
     margin-top: -80px;
+    display: none;
+    
+    @media(max-width:$xs){
+        margin-top: -15px;
+    }
     
     >img{
-        opacity: 0.85;
+        opacity: 0.5;
 //        width: 150%;
 //        margin-left: -30%;
         
-        transform: scale(1.5) translateX(-2.75%);
+        transform: scale(1.25) translateX(-2.75%);
         transform-origin: center center;
     }
 }
@@ -53,6 +82,11 @@ body{
 .main-slogan i {
     margin-top: 100px;
     z-index: 1;
+    
+    @media(max-width:$xs){
+        display: block;
+        opacity: 1;
+    }
 }
 
 .promo-fixed-box{
@@ -138,6 +172,12 @@ body{
 
 .light{
     opacity: 0.75;
+    @media(max-width:$xs){
+        //display: block!important;
+        top: 50%;
+        left: 50%;
+        opacity: 0.35;
+    }
 }
 
 .ticket-type{
@@ -168,6 +208,9 @@ body{
 
 .time-slot{
     padding: 60px 25px;
+    @media(max-width:$xs){
+        padding: 45px 0;
+    }
     p{
         text-align: left;
         max-width: 320px;
@@ -179,6 +222,10 @@ body{
     padding: 60px 25px;
     margin-left: -20px;
     margin-right: -20px;
+    
+    @media(max-width:$xs){
+        padding: 45px 15px;
+    }
 }
 
 .grey-box{
@@ -259,12 +306,26 @@ body{
     max-width: 890px;
     margin: 60px auto;
     
+    @media(max-width:$xs){
+        margin: 45px auto;
+    }
+    
     .col-md-4{
         >div{
             padding: 0 45px;
             >div{
                 position: relative;
             }
+        }
+        
+        &:last-child{
+            @media(max-width:$xs){
+                margin-bottom: 0px;
+            }
+        }
+        
+        @media(max-width:$xs){
+            margin-bottom: 60px;
         }
         
         &:nth-child(2){
@@ -281,12 +342,28 @@ body{
                         margin-top: -17.5px;
                         background-image: url(../../images/about-plus.svg);
                         background-size: cover;
+                        
+                        @media(max-width:$xs){
+                            left: 50%;
+                            margin-left: -17.5px;
+                            top: 0;
+                        }
                     }
                     
                     &:after{
                         left: auto;
                         right: 0;
                         margin-right: -65.5px;
+                        
+                        @media(max-width:$xs){
+                            left: 50%;
+                            margin-left: -17.5px;
+                            bottom: 0;
+                            margin-top: 0;
+                            margin-bottom: -105px;
+                            top: auto;
+                            right: auto;
+                        }
                     }
                 }
             }
@@ -312,6 +389,10 @@ body{
         padding-top: 15px;
         font-size: 19px;
         letter-spacing: 2.5px;
+        
+        @media(max-width:$xs){
+            margin-top: -25px;
+        }
     }
 }
 
@@ -365,5 +446,44 @@ body{
         color: #aaa;
         margin-bottom: 15px;
         display: block;
+    }
+}
+
+.black-box{
+    .col-md-4{
+        margin-bottom: 25px;
+        &:last-child{
+            @media(max-width:$xs){
+                margin-bottom: -25px    ;
+            }
+        }
+    }
+}
+
+#ticket{
+    .col-md-4{
+        @media(max-width:$xs){
+            margin-bottom: 45px;      
+        }
+    }
+}
+
+.timeline-box{
+    @media(max-width:$xs){
+        padding: 25px 0;
+    }
+    img{
+        &:first-child{
+            @media(max-width:$xs){
+                display: none;
+            }
+        }
+        
+        &:last-child{
+            display: none;
+            @media(max-width:$xs){
+                display: block;
+            }
+        }
     }
 }
