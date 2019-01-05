@@ -190,7 +190,6 @@ body { font-family: serif !important; }
 .sec-title:before { content: "("; position: absolute; top: 50%; right: 115%; }
 .sec-title:after { content: ")"; position: absolute; top: 50%; left: 115%; }
 .sec-title span { padding-top: 5px; letter-spacing: 2.5px; font-size: 17px; color: #a67c52; display: block; }
-@media (max-width: 776px) { .sec-title span { display: inline-block; font-family: "Noto Serif TC", serif !important; } }
 
 .special-ticket { max-width: 350px; margin: 50px auto; }
 .special-ticket:after { content: ''; display: table; clear: both; }
