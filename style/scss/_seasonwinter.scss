@@ -594,6 +594,9 @@ body{
 .rules-box{
     .main-container{
         padding: 60px 15px;
+        @media(max-width:$xs){
+            padding: 25px 0 0 0;
+        }
     }
     li,p{
         line-height: 1.75em;
@@ -671,4 +674,15 @@ body{
 
 .show-1, .show-2, .show-3, .show-4{
     opacity: 1;
+}
+
+.main-container{
+    @media(max-width:$xs){
+        padding-top: 15px;
+        margin-top: 0;
+    }
+}
+
+a{
+    word-break: break-all;
 }
