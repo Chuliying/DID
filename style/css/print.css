@@ -186,10 +186,11 @@ body { font-family: serif !important; }
 .new-about .pre-order-info { padding-top: 60px; }
 
 .sec-title { font-size: 21px; padding-top: 45px; letter-spacing: 5px; display: table; margin: auto; position: relative; margin-bottom: 60px; font-family: serif; }
-@media (max-width: 776px) { .sec-title { font-family: "Noto Serif TC", serif !important; } }
+@media (max-width: 776px) { .sec-title { display: inline-block; white-space: nowrap; font-family: "Noto Serif TC", serif !important; } }
 .sec-title:before { content: "("; position: absolute; top: 50%; right: 115%; }
 .sec-title:after { content: ")"; position: absolute; top: 50%; left: 115%; }
 .sec-title span { padding-top: 5px; letter-spacing: 2.5px; font-size: 17px; color: #a67c52; display: block; }
+@media (max-width: 776px) { .sec-title span { display: inline-block; font-family: "Noto Serif TC", serif !important; } }
 
 .special-ticket { max-width: 350px; margin: 50px auto; }
 .special-ticket:after { content: ''; display: table; clear: both; }

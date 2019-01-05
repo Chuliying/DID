@@ -259,6 +259,8 @@ body{
     margin-bottom: 60px;
     font-family: serif;
     @media(max-width:$xs){
+        display: inline-block;
+        white-space: nowrap;
         font-family: 'Noto Serif TC', serif!important;      
     }
     
@@ -281,6 +283,10 @@ body{
         font-size: 17px;
         color: #a67c52;
         display: block;
+        @media(max-width:$xs){
+            display: inline-block;
+            font-family: 'Noto Serif TC', serif!important;      
+        }
     }
 }
 
