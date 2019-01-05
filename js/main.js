@@ -1,3 +1,4 @@
+$.getScript("imagesLoaded");
 // landing bg fn
 $(document).on('mousemove', function(e){
     
@@ -67,26 +68,26 @@ startValue = 0;
 
 
 // landing fn
-function ShowBg(){
-    var i = startValue,
-        _w = $(window).width(),
-        showItem = ".show-"+i;
-    
-    if(_w < 776 ){
-        i=5;
-    }
-    
-    $(showItem).addClass('showup');
-    startValue++;
-    if (i>4){
-        $('.wrap').addClass('active');
-        $('.main-slogan i').addClass('show')
-        return false;  
-    } 
-    
-    setTimeout(ShowBg,1);   
-}
-ShowBg();
+//function ShowBg(){
+//    var i = startValue,
+//        _w = $(window).width(),
+//        showItem = ".show-"+i;
+//    
+//    if(_w < 776 ){
+//        i=5;
+//    }
+//    
+//    $(showItem).addClass('showup');
+//    startValue++;
+//    if (i>4){
+//        $('.wrap').addClass('active');
+//        $('.main-slogan i').addClass('show')
+//        return false;  
+//    } 
+//    
+//    setTimeout(ShowBg,1);   
+//}
+//ShowBg();
 
 // rules function 
 $(document).ready(function(){
@@ -122,3 +123,7 @@ $(document).ready(function(){
     });
 })
 
+
+$(document).imagesLoaded(function(){
+    $('html,body').addClass('loaded');
+})

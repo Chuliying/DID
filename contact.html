@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<head>
+    <title>Dinner In The Dark</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="target-densitydpi=device-dpi; width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <link rel="stylesheet" href="stylesheets/screen.css">
+    <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="stylesheets/print.css">
+    <link rel="stylesheet" href="stylesheets/media.css">
+    <link rel="stylesheet" href="style/css/print.css">
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/imagesLoaded.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <div class="wrap">
+       
+        <!-- mobile menu -->
+
+        <div class="mobile-menu">
+            <ul class="page-list">
+                <a href="about#ticket">
+                    <li class="ticket">
+                        Ticket <i class="fa fa-ticket"></i>
+                    </li>
+                </a>
+                <a href="about.html">
+                    <li class="active">
+                        About
+                    </li>
+                </a>
+                <a href="rules.html">
+                    <li>
+                        Rules
+                    </li>
+                </a>
+                <a href="experience.html">
+                    <li>
+                        Experience
+                    </li>
+                </a>
+                <a href="contact.html">
+                    <li>
+                        Contact
+                    </li>
+                </a>
+            </ul>
+        </div>      
+
+        <!-- header -->
+
+        <div class="header-contaier clearfix">
+            <!-- mobile header -->
+            <div class="visible-xs mobile-header clearfix">
+                <a href="index.html"><img src="images/logo2.png" alt=""></a>
+                <a class="mobile-menu-btn" href="#"><i class="fa fa-bars"></i></a>
+            </div>
+
+
+
+            <!-- desktop header -->
+            <div class="nav-logo hidden-xs">
+                <a href="index.html">
+                    <img src="images/cut1-intro/logo.png" alt="">       
+                </a>
+            </div>
+            <div class="nav-bar hidden-xs">
+                <ul class="page-list">
+                    <a href="about.html#ticket">
+                        <li class="ticket">
+                            Ticket <i class="fa fa-ticket"></i>
+                        </li>
+                    </a>
+                    <a href="about.html">
+                        <li class="active">
+                            About
+                        </li>
+                    </a>
+                    <a href="rules.html">
+                        <li>
+                            Rules
+                        </li>
+                    </a>
+                    <a href="experience.html">
+                        <li>
+                            Experience
+                        </li>
+                    </a>
+                    <a href="contact.html">
+                        <li>
+                            Contact
+                        </li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+       
+        <!-- landing cut -->
+        <!-- first cut -->
+        
+        <div class="section-02 reservation-section">
+            <div class="main-container">
+                <div class="main-box ">
+                    <div class="main-container"><form action="/dininginthedark2/contactstore" method="post" id="contentForm">
+                        <input type="hidden" name="_token" value="i7TGeLcZDUxOO1CG7jhd6ANtoube6uxuwHlEAGrk">
+                        <h1 class="title" style="color: #ccc">
+                            體驗內容
+                        </h1>
+                        <h3 class="sub-title">
+                            Experience
+                        </h3>
+                        <p>
+                            若有任何問題，請先參考<a href="rules.html">規則</a>⾴⾯，或是來信詢問
+                            <a href="mailto:dininginthedark@surpriselab.com.tw">
+                                dininginthedark@surpriselab.com.tw
+                            </a>
+                        </p>
+                        <br>
+                        <table>
+                            <tbody><tr>
+                                <td>＊姓名</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="text" name="name" required="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="alert-wrap" id="name_err">
+                                            <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                                            請輸入您的姓名
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>電話</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="text" name="tel">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>＊EMAIL</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="email" name="email" required="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="alert-wrap" id="email_err">
+                                            <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                                            請輸入正確電子信箱
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>備註</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <textarea name="notes" cols="30" rows="10" placeholder="" required=""></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="alert-wrap" id="notes_err">
+                                            <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                                            請填寫您想對我們說的話
+                                        </span>
+                                    </td>
+                                </tr>
+                            </tbody></table>
+
+                        <a href="javascript:;" id="contentBtn">
+                            <div class="btn btn-standard">
+                                送出
+                            </div>
+                        </a>
+                        </form></div>
+                </div>
+            </div>
+        </div>
+        <div class="season-2-footer">
+            <div class="footer-box">
+                <div class="contact-box">
+                    <h4>Contact</h4>
+                    <p>
+                        02-27192960<br>
+                        <a href="mailto:service@surpriselab.com.tw">service@surpriselab.com.tw</a>
+                    </p>
+                </div>
+                <div class="hyper-link">
+                    <ul>
+                        <a href="#">
+                            <li><i class="fa fa-facebook"></i></li>
+                        </a>
+                        <a href="#">
+                            <li><i class="fa fa-instagram"></i></li>
+                        </a>
+                    </ul>
+                    <ul>
+                        <a href="#">
+                            <li>Team</li>
+                        </a>
+                        <a href="#">
+                            <li>Join Mailing List</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="copyright">Copyright © 2018 驚喜製造</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
