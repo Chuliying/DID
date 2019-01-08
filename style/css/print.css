@@ -278,4 +278,6 @@ body { opacity: 0; transition: all 0.5s; font-family: serif !important; }
 
 @media (max-width: 776px) { .main-container { padding-top: 15px; margin-top: 0; } }
 
+.index .section-index { opacity: 0; }
+
 a { word-break: break-all; }
