@@ -175,7 +175,7 @@ body { opacity: 0; transition: all 0.5s; font-family: serif !important; }
 .new-about .title, .main-container .title { font-size: 26px; margin-bottom: 0; letter-spacing: 5px; }
 @media (max-width: 776px) { .new-about .title, .main-container .title { white-space: nowrap; } }
 .new-about .sub-title, .main-container .sub-title { font-size: 16px; color: #a47c52; letter-spacing: 2.5px; border-top: solid 1px #777; margin-bottom: 60px; margin-top: 3px; padding: 10px; display: table; margin-left: auto; margin-right: auto; }
-@media (max-width: 776px) { .new-about .sub-title, .main-container .sub-title { display: inline-block; white-space: nowrap; } }
+@media (max-width: 776px) { .new-about .sub-title, .main-container .sub-title { display: inline-block; white-space: nowrap; margin-bottom: 45px; } }
 .new-about .pre-order-info, .main-container .pre-order-info { padding-top: 150px; }
 .new-about p, .main-container p { font-size: 16px; line-height: 1.75em; }
 
@@ -281,3 +281,5 @@ body { opacity: 0; transition: all 0.5s; font-family: serif !important; }
 .index .section-index { opacity: 0; }
 
 a { word-break: break-all; }
+
+@media (max-width: 776px) { .m-text-align-left { text-align: left; padding: 0 35px; } }

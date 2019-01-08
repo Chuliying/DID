@@ -238,6 +238,7 @@ body{
         @media(max-width:$xs){
             display: inline-block;
             white-space:nowrap;
+            margin-bottom: 45px;
         }
     }
     
@@ -703,4 +704,11 @@ body{
 
 a{
     word-break: break-all;
+}
+
+.m-text-align-left{
+    @media(max-width:$xs){
+        text-align: left;
+        padding: 0 35px;
+    }
 }
