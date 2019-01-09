@@ -727,3 +727,13 @@ a{
     content: '目標 2000張';
 }
 }
+
+.smaller-p{
+    padding: 10px 25px!important;
+    line-height: 1.75em;
+    
+    a{
+        padding-bottom: 2px;
+        border-bottom: solid 1px #ccc;
+    }
+}

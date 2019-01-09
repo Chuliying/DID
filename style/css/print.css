@@ -287,3 +287,6 @@ a { word-break: break-all; }
 
 @media (max-width: 776px) { .new-about .progress-bar-box .bar-box:bofore, .new-about .progress-bar-box .bar-box:after { font-family: "Noto Serif TC", serif !important; } }
 .new-about .progress-bar-box .bar-box:before { content: '目標 2000張'; }
+
+.smaller-p { padding: 10px 25px !important; line-height: 1.75em; }
+.smaller-p a { padding-bottom: 2px; border-bottom: solid 1px #ccc; }
