@@ -192,6 +192,7 @@ body { opacity: 0; transition: all 0.5s; font-family: serif !important; }
 
 .time-slot { padding: 60px 25px; }
 @media (max-width: 776px) { .time-slot { padding: 45px 0; } }
+.time-slot .golden-font { text-align: center; }
 .time-slot p { text-align: left; max-width: 320px; margin: 45px auto; }
 
 .black-box { padding: 60px 25px; margin-left: -20px; margin-right: -20px; }
@@ -283,3 +284,6 @@ body { opacity: 0; transition: all 0.5s; font-family: serif !important; }
 a { word-break: break-all; }
 
 @media (max-width: 776px) { .m-text-align-left { text-align: left; padding: 0 35px; } }
+
+@media (max-width: 776px) { .new-about .progress-bar-box .bar-box:bofore, .new-about .progress-bar-box .bar-box:after { font-family: "Noto Serif TC", serif !important; } }
+.new-about .progress-bar-box .bar-box:before { content: '目標 2000張'; }
